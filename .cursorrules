@@ -1,0 +1,8 @@
+# Cursor & Codex Rules for Pointillism Studio
+
+- Framework: React 19 + TypeScript + Vite 6 + Tailwind CSS v4.
+- Primary App Code: src/App.tsx
+- Styling: Use Tailwind CSS utility classes and the theme variables defined in src/index.css (--color-bg-main, --color-bg-panel, --color-accent-blue, etc.).
+- Performance: Keep canvas rendering non-blocking. Use progressive batching via requestAnimationFrame when drawing heavy point distributions.
+- State: PointSettings interface in src/App.tsx controls all drawing properties. Maintain backwards compatibility for preset saving/loading.
+- Clipboard: Maintain Ctrl+V / Cmd+V paste support for direct image import.
